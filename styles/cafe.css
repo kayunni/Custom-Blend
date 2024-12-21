@@ -239,7 +239,7 @@ html::-webkit-scrollbar {
 .filter-section .filter-group:nth-of-type(2) {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /*흠.....*/
+    align-items: flex-start; 
 }
 .filter-section .filter-group:nth-of-type(2).filter-btn {
     text-align: left;
@@ -307,7 +307,7 @@ html::-webkit-scrollbar {
 .gallery-item {
     height: 40vh;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* 이미지와 텍스트를 좌우로 나눔 */
+    grid-template-columns: 1fr 1fr; 
     align-items: flex-end;
     overflow: hidden; 
     transform-style: preserve-3d;
@@ -321,33 +321,31 @@ html::-webkit-scrollbar {
     display: block;
     width: 100%;
     height: 40vh;
-    object-fit: cover; /* 이미지를 비율에 맞춰 자름 */
+    object-fit: cover; 
     overflow: hidden;
     cursor: pointer; 
     transition: transform 0.5s ease, box-shadow 0.5s ease;
     position: relative;
     z-index: 2;
-    transform-origin: center; /* 기본적으로 중앙 기준 */
+    transform-origin: center; 
 }
 .gallery-item:nth-child(odd) img {
-    transform-origin: left center; /* 왼쪽 정렬 이미지 */
+    transform-origin: left center; 
 }
 
 .gallery-item:nth-child(even) img {
-    transform-origin: right center; /* 오른쪽 정렬 이미지 */
+    transform-origin: right center; 
 }
 
 .gallery-item:nth-child(odd) .img-container:hover img {
-    transform: rotateY(20deg) rotateX(0deg); /* Z축 및 X축 회전 */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); /* 그림자 효과 */
+    transform: rotateY(20deg) rotateX(0deg); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); 
 }
 
-/* 짝수 셀(우측에서 효과) */
 .gallery-item:nth-child(even) .img-container:hover img {
-    transform: rotateY(-20deg) rotateX(0deg); /* 반대 방향 회전 */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9); /* 더 진한 그림자 효과 */
+    transform: rotateY(-20deg) rotateX(0deg); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5); 
 }
-
 
 .text-right {
     text-align: right;

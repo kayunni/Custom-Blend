@@ -8,7 +8,7 @@
 
 .main {
     position: relative;
-    background-color: #a09a94;
+    background-color: #26211d;
     height: 100vh;
 }
 
@@ -19,11 +19,15 @@
     justify-content: center;
     z-index: 1;
     height: 20vh;
-    color: #4f4d4b;
+    color: #E2DAD3;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     gap: 2rem;
 }
+.title p {
+    letter-spacing: 0.5rem;
+}
+
 .title img {
     width: 8rem;
     height: 8rem;
@@ -32,7 +36,7 @@
 .title p {
     padding-top: 0.4rem;
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -53,6 +57,7 @@
 }
 .grid-item:hover img {
     filter: grayscale(0%); 
+    cursor: pointer;
   }
 .bottom {
     object-position: center top;

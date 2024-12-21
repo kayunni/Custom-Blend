@@ -31,13 +31,46 @@ function updateModal() {
     modalRecipe.innerHTML = "<p>RECIPE</p>";
     renderRecipe(drink.recipe);
 
-    // recommendation 렌더링
-    renderRecommendation(drink.recommendation);
+    // 해시태그 렌더링
+    renderTags(drink.features);
+}
+
+function renderTags(features) {
+    // 기존 태그가 있다면 초기화
+    let tagsContainer = document.getElementById("modal-tags");
+    if (!tagsContainer) {
+        // 태그 컨테이너가 없으면 생성
+        tagsContainer = document.createElement("div");
+        tagsContainer.id = "modal-tags";
+        modalTitle.insertAdjacentElement("afterend", tagsContainer); // 제목 아래에 삽입
+    }
+
+    // 태그 초기화 후 새로 렌더링
+    tagsContainer.innerHTML = "";
+    features.forEach((feature) => {
+        const tag = document.createElement("span");
+        tag.className = "modal-tag";
+        tag.textContent = `#${formatFeature(feature)}`;
+        tagsContainer.appendChild(tag);
+    });
+}
+
+// 해시태그 텍스트 포맷팅 함수
+function formatFeature(feature) {
+    // 필요 시 feature 텍스트를 한국어로 변환
+    const featureMap = {
+        "diet": "다이어트",
+        "no-milk": "우유를 못마신다면",
+        "high-caffeine": "밤샘이 필요할 때",
+        "sweet": "고당도",
+        "unique": "특이한 조합",
+        "seasonal": "시즌메뉴를 더 특별하게",
+    };
+    return featureMap[feature] || feature;
 }
 
 // 레시피 데이터를 생성하고 렌더링하는 함수
 function renderRecipe(recipe) {
-    // 대상 요소 가져오기
     const recipeContainer = document.getElementById("modal-recipe");
 
     // 레시피 내용을 HTML로 생성
@@ -54,31 +87,6 @@ function renderRecipe(recipe) {
     // 기존 <p> 아래에 렌더링
     recipeContainer.innerHTML += recipeHTML;
 }
-
-// recommendation 렌더링 함수
-function renderRecommendation(recommendation) {
-    const recommendContainer = document.getElementById("modal-recommend");
-
-    // recommendation 배열 확인 후 렌더링
-    if (Array.isArray(recommendation) && recommendation.length > 0) {
-        let recommendationHTML = `
-            <p>RECOMMENDATION</p>
-            <ul>
-        `;
-        recommendation.forEach((item) => {
-            recommendationHTML += `<li>${item}</li>`;
-        });
-        recommendationHTML += `</ul>`;
-
-        recommendContainer.innerHTML = recommendationHTML;
-    } else {
-        recommendContainer.innerHTML = `
-            <p>RECOMMENDATION</p>
-            <p>추천 항목이 없습니다.</p>
-        `;
-    }
-}
-
 
 // 레시피 키 포맷팅 함수
 function formatRecipeKey(key) {

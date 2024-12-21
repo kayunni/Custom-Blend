@@ -1,7 +1,8 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
 @font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
+    font-family: 'Ownglyph_ryurue-Rg';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_ryurue-Rg.woff2') format('woff2');
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -15,30 +16,48 @@
     transform: translate(-50%, -50%);
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(77, 78, 69, 0.717);
-    padding: 3rem 4rem;
+    padding: 0 4rem 3rem 4rem;
     text-align: center;
-    background-color: #716d69;
+    background-color: #504b45;
     color: #ece9e4;
-    font-family: 'Pretendard-Regular';
+    font-family: 'Pretendard';
+    font-weight: 200;
+    font-size: 1.2rem;
 }
 ul {
     list-style: none; /* 기본 기호 제거 */
     padding: 0; /* 필요하면 기본 패딩 제거 */
     margin: 0; /* 필요하면 기본 마진 제거 */
 }
-
+.modal-header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    border-bottom: solid 0.5px #ece9e4;
+}
+.modal-contents {
+    padding-top: 5rem;
+    display: flex;
+}
 .modal-content-left {
-    flex: 1;
+    flex: 4;
 }
 .modal-content-right {
-    flex: 2;
-    padding: 0 3rem;
+    flex: 5;
+    padding-left: 2.5rem;
+}
+
+#modal-description {
+    padding: 1rem;
+    background-color: #716a61;
+    word-break: keep-all;
 }
 #modal-recipe {
     text-align: left;
     line-height: 200%;
     font-size: 1.5rem;
-    padding-bottom: 1rem;
+    padding: 1rem 0;
     color: #ece9e4;
     display: flex;
     flex-direction: column;
@@ -50,11 +69,29 @@ ul {
     margin-bottom: 1.5rem;
     border-bottom: 1px solid #bcbcb4;
     color: #ece9e4;
-
 }
 
 #modal-title {
-    padding-bottom: 2rem;
+    padding: 1rem 0;
+    font-family: 'Ownglyph_ryurue-Rg';
+    font-size: 2rem;
+}
+
+#modal-tags {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 0.5rem;
+    justify-content: center; 
+}
+.modal-tag {
+    background-color: #bbb1a3;
+    color: #575653;
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
+    border-radius: 1.5rem;
+    border: 1px solid #bcbcb4;
+    white-space: nowrap; /* 태그 내용이 한 줄로 유지되도록 */
 }
 
 /* 레시피 키 스타일 */
@@ -79,13 +116,16 @@ ul {
     position: absolute; /* 우측 상단 배치 */
     top: 10px; /* 모달 상단에서 10px 아래 */
     right: 10px; /* 모달 우측에서 10px 왼쪽 */
-    font-size: 24px;
     cursor: pointer;
-    color: #484848;
+    color: #c4bdb1;
     background: none; /* 배경 없음 */
     border: none; /* 테두리 없음 */
     outline: none; /* 포커스 외곽선 없음 */
     z-index: 1100; /* 닫기 버튼이 항상 위에 표시 */
+}
+.modal-close img {
+    width: 1.6rem;
+    height: auto;
 }
 .modal-arrow {
     position: absolute;
@@ -95,34 +135,42 @@ ul {
     border: none;
     font-size: 2rem;
     cursor: pointer;
-    color: #484848;
+    color: #ece9e4;
     z-index: 1100;
 }
 #modal-prev {
     left: 10px;
 }
-
+#modal-prev img {
+    transform: rotate(180deg);
+    width: 2rem;
+    height: auto;
+}
 #modal-next {
     right: 10px;
 }
+#modal-next img {
+    width: 2rem;
+    height: auto;
+}
 
 .modal-arrow:hover {
-    color: #b9b9b9;
     transform: translateY(-50%) scale(1.2); /* hover 시 약간 확대 */
     transition: transform 0.3s ease;
 }
 .modal-close:hover {
-    color: #b9b9b9;
-    transform: scale(1.2); /* hover 시 약간 확대 */
+    transform: scale(1.1); /* hover 시 약간 확대 */
     transition: transform 0.3s ease;
 }
-
+.modal-img-container {
+    background-color: yellow;
+    width: 100%;
+    height: 50vh;
+}
 #modal-img {
-    max-width: 100%;
-    max-height: 80%;
-    width: auto;
-    height: auto; /*?????*/ 
-
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     display: block;
     margin-bottom: 1rem; /*이미지 아래 공백추가*/
 }

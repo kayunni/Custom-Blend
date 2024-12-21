@@ -74,25 +74,27 @@
 
                 <!-- Modal -->
                 <div id="modal" class="modal">
-                    <button class="modal-close">&times;</button>
-                    
-                    <div class="modal-content-left">
-                        <img id="modal-img" src="" alt="Drink Image">
-                        <h2 id="modal-title"></h2>
-                        <p id="modal-description"></p>
+                    <div class="modal-header">
+                        <button class="modal-close"><img src="assets/icons/delete-button.png"></button>
+                    </div>
+                    <div class="modal-contents">
+                        <div class="modal-content-left">
+                            <div class="modal-img-container">
+                                <img id="modal-img" src="" alt="Drink Image">
+                            </div>
+                            <h2 id="modal-title"></h2>
+                        </div>
+    
+                        <div class="modal-content-right">
+                            <p id="modal-description"></p>
+                            <div id="modal-recipe">
+                                <p>RECIPE</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="modal-content-right">
-                        <div id="modal-recipe">
-                            <p>RECIPE</p>
-                        </div>
-                        <div id="modal-recommend">
-
-                        </div>
-                    </div>
-
-                    <button id="modal-prev" class="modal-arrow">&larr;</button>
-                    <button id="modal-next" class="modal-arrow">&rarr;</button>
+                    <button id="modal-prev" class="modal-arrow"><img src="assets/icons/arrow-right.png"></button>
+                    <button id="modal-next" class="modal-arrow"><img src="assets/icons/arrow-right.png"></button>
                 </div>
             </main>
         </section>
