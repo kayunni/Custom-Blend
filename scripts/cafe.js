@@ -150,13 +150,11 @@ function applyFilters(cafeData) {
 function renderFilteredGallery(filteredDrinks) {
     const gallery = document.getElementById("gallery");
 
-    // 필터링된 음료 렌더링
     gallery.innerHTML = filteredDrinks
         .map((drink, index) => {
             const isReverse = index % 2 === 1 ? "reverse" : "";
 
-            // 이미지 유무에 따라 배경색 설정
-            const backgroundColor = getBackgroundColor(selectedCafe, 0.1); // 이미지 없는 경우 투명도 10%
+            const backgroundColor = getBackgroundColor(selectedCafe, 0.1); // 투명도 10%
             const bgColorForImage = getBackgroundColor(selectedCafe);
 
             return `
@@ -193,10 +191,10 @@ function renderFilteredGallery(filteredDrinks) {
         })
         .join("");
 
-    // 필터링된 아이템에 클릭 이벤트 추가
-    const galleryItems = document.querySelectorAll(".gallery-item");
-    galleryItems.forEach((item, index) => {
-        item.addEventListener("click", () => {
+    // 각 갤러리 아이템에 클릭 이벤트 추가 (이미지 컨테이너에만 적용)
+    const galleryItems = document.querySelectorAll(".gallery-item .img-container");
+    galleryItems.forEach((imgContainer, index) => {
+        imgContainer.addEventListener("click", () => {
             showModal(filteredDrinks, index); // 클릭 시 모달 열기
         });
     });
@@ -210,9 +208,9 @@ function renderGallery(cafeData) {
         .map((drink, index) => {
             const isReverse = index % 2 === 1 ? "reverse" : "";
 
-            // 이미지 유무에 따라 배경색 설정
-            const backgroundColor = getBackgroundColor(selectedCafe, 0.1); // 이미지 없는 경우 투명도 20%
+            const backgroundColor = getBackgroundColor(selectedCafe, 0.1); // 투명도 10%
             const bgColorForImage = getBackgroundColor(selectedCafe);
+
             return `
                 <div class="gallery-item ${isReverse}" data-index="${index}" style="background-color: ${backgroundColor};">
                     ${
@@ -247,14 +245,11 @@ function renderGallery(cafeData) {
         })
         .join("");
 
-    // 디버깅: 확인용 콘솔 로그 추가
-    console.log("Rendered gallery items:", cafeData.drinks);
-
-    // 각 갤러리 아이템에 클릭 이벤트 추가
-    const galleryItems = document.querySelectorAll(".gallery-item");
-    galleryItems.forEach((item, index) => {
-        item.addEventListener("click", () => {
-            showModal(cafeData.drinks, index);
+    // 각 갤러리 아이템에 클릭 이벤트 추가 (이미지 컨테이너에만 적용)
+    const galleryItems = document.querySelectorAll(".gallery-item .img-container");
+    galleryItems.forEach((imgContainer, index) => {
+        imgContainer.addEventListener("click", () => {
+            showModal(cafeData.drinks, index); // 클릭 시 모달 열기
         });
     });
 }
