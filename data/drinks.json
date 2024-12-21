@@ -1,0 +1,304 @@
+{
+    "starbucks": {
+      "title": "Starbucks",
+      "logo": "https://logos-world.net/wp-content/uploads/2020/09/Starbucks-Logo.png",
+      "drinks": [
+        {
+            "name": "초코나무숲 프라푸치노",
+            "base": "milk",
+            "features": ["sweet", "unique"],
+            "image": "assets/images/drinks/starbucks/초코나무숲.png",
+            "recipe": {
+                "base_drink": "제주 말차 크림 프라푸치노",
+                "milk": "두유로 변경",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "초콜릿 드리즐 많이",
+                "powder": "유기농 말차 5스쿱"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": [
+                "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+            ]
+        },
+        {
+            "name": "페레로로쉐 프라푸치노",
+            "base": "coffee",
+            "features": ["sweet"],
+            "image": "assets/images/drinks/starbucks/페레로로쉐.jpg",
+            "recipe": {
+                "base_drink": "자바칩 프라푸치노",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "초콜릿 드리즐 보통",
+                "syrup": "모카 시럽 3, 헤이즐넛 시럽 2",
+                "whipping": "휘핑크림 보통"
+            },
+            "description": "페레로로쉐!",
+            "recommendation": "페레로로쉐!"
+        },
+        {
+        "name": "고디바 프라푸치노",
+            "base": "milk",
+            "features": ["sweet"],
+            "image": "assets/images/drinks/starbucks/고디바.jpg",
+            "recipe": {
+                "base_drink": "초콜릿 크림 칩 프라푸치노",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "카라멜 드리즐 보통",
+                "syrup": "헤이즐넛 시럽 1"
+            },
+            "description": "디바디바.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        },
+        {
+            "name": "진한 자몽 허니 블랙티",
+            "base": "fruit",
+            "features": ["diet", "no-milk"],
+            "image": "assets/images/drinks/starbucks/자허블.png",
+            "recipe": {
+                "base_drink": "아이스 자몽 허니 블랙티",
+                "syrup": "클래식 시럽 없이"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        },
+        {
+            "name": "돼지바 블렌디드",
+            "base": "fruit",
+            "features": ["diet"],
+            "image": "assets/images/drinks/starbucks/자허블.png",
+            "recipe": {
+                "base_drink": "아이스 자몽 허니 블랙티",
+                "syrup": "클래식 시럽 없이"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        }
+      ]
+    },
+    "gongcha": {
+      "title": "Gongcha",
+      "logo": "assets/images/gongcha_logo.png",
+      "drinks": [
+        {
+            "name": "다이어트 자몽 그린티",
+            "base": "fruit",
+            "feature": ["diet", "no-milk"],
+            "image": "assets/images/drinks/gongcha/자몽그린티.png",
+            "recipe": {
+                "base_drink": "자몽 그린티 L",
+                "ice": "얼음 적게",
+                "sugar_content": "당도 0",
+                "drizzle": "초콜릿 드리즐 많이",
+                "powder": "유기농 말차 5스쿱"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        },
+        {
+            "name": "코코넛 우롱 밀크티",
+            "base": "coffee",
+            "feature": "sweet",
+            "image": "assets/images/drinks/gongcha/코코넛우롱.png",
+            "recipe": {
+                "base_drink": "제주 말차 크림 프라푸치노",
+                "milk": "두유로 변경",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "초콜릿 드리즐 많이",
+                "powder": "유기농 말차 5스쿱"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        },
+        {
+            "name": "코코넛 망고 스무디",
+            "base": "coffee",
+            "feature": "sweet",
+            "image": "assets/images/drinks/gongcha/망고.png",
+            "recipe": {
+                "base_drink": "제주 말차 크림 프라푸치노",
+                "milk": "두유로 변경",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "초콜릿 드리즐 많이",
+                "powder": "유기농 말차 5스쿱"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        }, 
+        {
+        "name": "초코나무숲 프라푸치노",
+            "base": "coffee",
+            "feature": "sweet",
+            "image": "assets/images/drinks/starbucks/초코나무숲.png",
+            "recipe": {
+                "base_drink": "제주 말차 크림 프라푸치노",
+                "milk": "두유로 변경",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "초콜릿 드리즐 많이",
+                "powder": "유기농 말차 5스쿱"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        }
+      ]
+    },
+    "compose": {
+      "title": "Compose Coffee",
+      "logo": "https://i.namu.wiki/i/20w6rY7yIRMiSETw1o-fe3jKLCobKL4XNTAGRivxZ0OJV3B06Roj5A1ks6YV4-gQ90Q9WYvxzRc2G_Uh6lQeTg.svg",
+      "drinks": [
+        {
+            "name": "컴포즈!!",
+            "base": "coffee",
+            "feature": "sweet",
+            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "recipe": {
+                "base_drink": "제주 말차 크림 프라푸치노",
+                "milk": "두유로 변경",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "초콜릿 드리즐 많이",
+                "powder": "유기농 말차 5스쿱"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        },
+        {
+            "name": "컴포즈!!",
+            "base": "coffee",
+            "feature": "sweet",
+            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "recipe": {
+                "base_drink": "제주 말차 크림 프라푸치노",
+                "milk": "두유로 변경",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "초콜릿 드리즐 많이",
+                "powder": "유기농 말차 5스쿱"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        },
+        {
+            "name": "컴포즈!!",
+            "base": "coffee",
+            "feature": "sweet",
+            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "recipe": {
+                "base_drink": "제주 말차 크림 프라푸치노",
+                "milk": "두유로 변경",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "초콜릿 드리즐 많이",
+                "powder": "유기농 말차 5스쿱"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        },
+        {
+            "name": "컴포즈!!",
+            "base": "coffee",
+            "feature": "sweet",
+            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "recipe": {
+                "base_drink": "제주 말차 크림 프라푸치노",
+                "milk": "두유로 변경",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "초콜릿 드리즐 많이",
+                "powder": "유기농 말차 5스쿱"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        },
+        {
+            "name": "컴포즈!!",
+            "base": "coffee",
+            "feature": "sweet",
+            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "recipe": {
+                "base_drink": "제주 말차 크림 프라푸치노",
+                "milk": "두유로 변경",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "초콜릿 드리즐 많이",
+                "powder": "유기농 말차 5스쿱"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        }
+      ]
+    },
+    "mega": {
+      "title": "Mega Coffee",
+      "logo": "https://img.79plus.co.kr/megahp/common/img/bi_logo1.png",
+      "drinks": [
+        {
+            "name": "꿀 타피오카 아메리카노",
+            "base": "coffee",
+            "feature": "sweet",
+            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "recipe": {
+                "base_drink": "꿀 아메리카노",
+                "shots": "기본 2샷에서 연하게",
+                "topping": "타피오카 펄 추가"
+            },
+            "description": "아메리카노의 묵직한 바디감에 달콤한 사양벌꿀이 소프트하게 어우러진 커피에 쫄깃한 타피오카 펼의 조화를 느껴보세요.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        },
+        {
+            "name": "메가!!",
+            "base": "coffee",
+            "feature": "sweet",
+            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "recipe": {
+                "base_drink": "제주 말차 크림 프라푸치노",
+                "milk": "두유로 변경",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "초콜릿 드리즐 많이",
+                "powder": "유기농 말차 5스쿱"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        },
+        {
+            "name": "메가!!",
+            "base": "coffee",
+            "feature": "sweet",
+            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "recipe": {
+                "base_drink": "제주 말차 크림 프라푸치노",
+                "milk": "두유로 변경",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "초콜릿 드리즐 많이",
+                "powder": "유기농 말차 5스쿱"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        },
+        {
+            "name": "메가!!",
+            "base": "coffee",
+            "feature": "sweet",
+            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "recipe": {
+                "base_drink": "제주 말차 크림 프라푸치노",
+                "milk": "두유로 변경",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "초콜릿 드리즐 많이",
+                "powder": "유기농 말차 5스쿱"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        },
+        {
+            "name": "메가!!",
+            "base": "coffee",
+            "feature": "sweet",
+            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "recipe": {
+                "base_drink": "제주 말차 크림 프라푸치노",
+                "milk": "두유로 변경",
+                "javachip": "자바칩&토핑(반반) 2",
+                "drizzle": "초콜릿 드리즐 많이",
+                "powder": "유기농 말차 5스쿱"
+            },
+            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다.",
+            "recommendation": "기호에 맞게 바닐라시럽을 1~2펌프 추가해보세요."
+        }
+      ]
+    }
+  }

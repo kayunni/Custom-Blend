@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles/cafe.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    
+</head>
+<body>
+    <header>
+        <div id="header">
+            <a href="index.html">
+                <img src="assets/icons/customBlend.png">
+                HOME
+            </a>
+            <img id="hamburger" src="assets/icons/hamburger.svg">
+        </div>
+    </header>
+
+    <div id="side-menu" class="side-menu hidden">
+        <button id="menu-close"><img src="assets/icons/x.png"></button>
+        <p>MENU</p>
+        <ul>
+            <li><a href="cafe.html?cafe=starbucks">Starbucks</a></li>
+            <li><a href="cafe.html?cafe=gongcha">Gongcha</a></li>
+            <li><a href="cafe.html?cafe=mega">Mega Coffee</a></li>
+            <li><a href="cafe.html?cafe=compose">Compose Coffee</a></li>
+        </ul>
+        <div class="contact">
+            <div><a href="cafe.html?cafe=compose">Share your drinks!</a></div>
+        </div>
+    </div>
+
+    <div class="contents-container">
+        <section class="left">
+            <div class="left-container">
+                <div class="title-logo">
+                    <div id="cafe-logo">
+                        <img src="" alt="Cafe Logo" id="logo-img">
+                    </div>
+                    <div id="cafe-title"></div>
+                </div>
+            </div>
+
+            <aside class="filter-section">
+                <div class="filter-group">
+                    <p>음료 베이스</p>
+                    <button class="filter-btn" data-type="base" data-filter="coffee">Coffee</button>
+                    <button class="filter-btn" data-type="base" data-filter="milk">Milk-based</button>
+                    <button class="filter-btn" data-type="base" data-filter="tea">Tea</button>
+                    <br/>
+                    <button class="filter-btn" data-type="base" data-filter="ade">Ade</button>
+                    <button class="filter-btn" data-type="base" data-filter="fruit">Fruit-based</button>
+                    <button class="filter-btn" data-type="base" data-filter="others">Others</button>
+                </div>
+                <div class="filter-group">
+                    <p>음료 특징</p>
+                    <button class="filter-btn" data-type="feature" data-filter="diet">#다이어트</button>
+                    <button class="filter-btn" data-type="feature" data-filter="no-milk">#우유를 못마신다면</button>
+                    <button class="filter-btn" data-type="feature" data-filter="high-caffeine">#밤샘이 필요할 때</button>
+                    <button class="filter-btn" data-type="feature" data-filter="sweet">#고당도</button>
+                    <button class="filter-btn" data-type="feature" data-filter="unique">#특이한 조합</button>
+                    <button class="filter-btn" data-type="feature" data-filter="seasonal">#시즌메뉴를 더 특별하게</button>
+                </div>
+            </aside> 
+        </section>
+        <section class="right">
+            <main>
+                <div class="gallery" id="gallery">
+                    <!-- 음료 갤러리 아이템이 JavaScript로 동적 로드됨 -->
+                </div>
+
+                <!-- Modal -->
+                <div id="modal" class="modal">
+                    <button class="modal-close">&times;</button>
+                    
+                    <div class="modal-content-left">
+                        <img id="modal-img" src="" alt="Drink Image">
+                        <h2 id="modal-title"></h2>
+                        <p id="modal-description"></p>
+                    </div>
+
+                    <div class="modal-content-right">
+                        <div id="modal-recipe">
+                            <p>RECIPE</p>
+                        </div>
+                        <div id="modal-recommend">
+
+                        </div>
+                    </div>
+
+                    <button id="modal-prev" class="modal-arrow">&larr;</button>
+                    <button id="modal-next" class="modal-arrow">&rarr;</button>
+                </div>
+            </main>
+        </section>
+    </div>
+
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/cafe.js" defer></script>   
+</body>
+</html>
