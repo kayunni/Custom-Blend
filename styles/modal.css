@@ -183,7 +183,8 @@ ul {
     bottom: 3rem;
     text-decoration: none;
     background-color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    padding: 1rem;
 }
 
 #modal-contact a {
