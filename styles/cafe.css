@@ -179,10 +179,11 @@ html::-webkit-scrollbar {
     border: 1px solid white;
     border-radius: 3rem;
     font-size: 1rem;
+    transition: all 0.4s ease;
 }
 .contact a:hover {
     background-color: white;
-    color: black;
+    color: rgb(76, 73, 62);
 }
 .side-menu.hidden {
     transform: translateX(100%);
@@ -361,4 +362,115 @@ html::-webkit-scrollbar {
     text-align: left;
     padding: 1.5rem;
     color: #383737;
+}
+
+@media (max-width: 768px) {
+    .contents-container {
+        flex-direction: column;
+    }
+    #header {
+        z-index: 1000;
+        background-color: #F0EEEC;
+        font-size: 1.2rem;
+    }
+    #header a {
+        display: flex;
+        align-items: center;
+        height: 3rem;
+        gap: 0.5rem;
+        text-decoration: none;
+    }
+    #header a img {
+        width: 1.8rem;
+        height: auto;
+        vertical-align: middle;
+    }
+    #header img {
+        width: 1.2rem;
+    }
+    .left {
+        display: none;
+    }
+
+    .right {
+        flex: none;
+        margin-top: 4rem; 
+        width: 100%;
+        height: auto;
+        overflow-y: auto; /* 갤러리 스크롤 가능 */
+        z-index: 1; /* `.left`보다 뒤로 배치 */
+    }
+
+    .gallery {
+        position: relative;
+        width: 100%;
+        grid-template-columns: 1fr;
+        border-left: solid 1.5px #cdc9c3;
+        border-right: solid 1.5px #cdc9c3;
+        justify-content: flex-start;
+        margin-right: 0;
+        font-size: 0.8rem;
+        font-family: 'Ownglyph_ryurue-Rg';
+    }
+    
+    .gallery-item {
+        height: 30vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        align-items: flex-end;
+        overflow: hidden; 
+        transform-style: preserve-3d;
+        border-bottom: solid 1.5px #cdc9c3;
+    }
+    
+    .gallery-item .img-container {
+        perspective: 1500px; /* 3D 효과 */
+    }
+    .gallery-item img {
+        height: 30vh;
+        transition: transform 0.5s ease, box-shadow 0.5s ease;
+        position: relative;
+        z-index: 2;
+        transform-origin: center; 
+    }
+
+    .filter-group p {
+        position: relative;
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+        color: #48453c;
+        font-family: 'PeoplefirstFightingTTF';
+        font-weight: 100;
+    }
+    .filter-group p::after {
+        position: absolute;
+        content: "";
+        width: 2em;
+        border: 0.5px solid #98948f;
+        left: 0;
+        bottom: 0;
+        transform: translate(0, 10%);
+    }
+    .filter-btn {
+        position: relative;
+        padding: 1px 2px;
+        border: 1px solid rgb(83, 74, 74);
+        color: rgb(83, 74, 74);
+        cursor: pointer;
+        border-radius: 3rem;
+        transition: background-color 0.3s;
+        font-family: 'Pretendard-Regular';
+        z-index: 1;
+        font-size: 0.5rem;
+    }
+    .text-right .text-left{
+        padding: 1rem;
+    }
+
+    .side-menu {
+        width: 100%;
+        height: 100vh;
+    }
 }

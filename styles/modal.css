@@ -96,7 +96,6 @@ ul {
     white-space: nowrap; /* 태그 내용이 한 줄로 유지되도록 */
 }
 
-/* 레시피 키 스타일 */
 .recipe-key {
     font-weight: bold;
     color: #bcbcb4;
@@ -107,24 +106,21 @@ ul {
     font-family: 'Ownglyph_ryurue-Rg';
 }
 
-/* 레시피 값 스타일 */
 .recipe-value {
     color: #ece9e4;
     font-size: 1.2rem;
 }
 
 
-/*화살표 및 버튼들*/
 .modal-close {
-    position: absolute; /* 우측 상단 배치 */
+    position: absolute; 
     top: 10px; /* 모달 상단에서 10px 아래 */
     right: 10px; /* 모달 우측에서 10px 왼쪽 */
     cursor: pointer;
     color: #c4bdb1;
-    background: none; /* 배경 없음 */
-    border: none; /* 테두리 없음 */
-    outline: none; /* 포커스 외곽선 없음 */
-    z-index: 1100; /* 닫기 버튼이 항상 위에 표시 */
+    background: none; 
+    border: none; 
+    z-index: 1100; 
 }
 .modal-close img {
     width: 1.6rem;
@@ -158,11 +154,11 @@ ul {
 }
 
 .modal-arrow:hover {
-    transform: translateY(-50%) scale(1.2); /* hover 시 약간 확대 */
+    transform: translateY(-50%) scale(1.2); 
     transition: transform 0.3s ease;
 }
 .modal-close:hover {
-    transform: scale(1.1); /* hover 시 약간 확대 */
+    transform: scale(1.1); 
     transition: transform 0.3s ease;
 }
 .modal-img-container {
@@ -203,4 +199,152 @@ ul {
     margin-bottom: 0px;
     box-shadow: 0px 0px 0px 0px #007144;
     transition: all 0.3s ease;
-  }
+}
+
+@media (max-width:768px) {
+    .modal {
+        width: 90%;
+        height: 55%;
+        box-shadow: 0 4px 10px rgba(77, 78, 69, 0.717);
+        padding: 0 1.4rem 1rem 1.4rem;
+        font-weight: 200;
+        font-size: 0.8rem;
+    }
+
+    .modal-header {
+        height: 2rem;
+        border-bottom: solid 0.5px #ece9e4;
+    }
+    .modal-contents {
+        padding-top: 3rem;
+        display: flex;
+    }
+    .modal-content-left {
+        flex: 4;
+    }
+    .modal-content-right {
+        flex: 5;
+        padding-left: 1rem;
+    }
+
+    #modal-description {
+        padding: 0.8rem;
+        background-color: #716a61;
+        word-break: keep-all;
+        font-size: 0.6rem;
+    }
+    #modal-recipe {
+        line-height: 200%;
+        font-size: 0.8rem;
+        padding: 0.5rem 0;
+    }
+    .recipe-key {
+        font-weight: bold;
+        color: #bcbcb4;
+        margin-right: 5px;
+        border: 1px solid #bcbcb4;
+        padding: 0.2rem 0.3rem;
+        border-radius: 2rem;
+        font-family: 'Ownglyph_ryurue-Rg';
+        font-size: 0.6rem;
+    }
+    .recipe-value {
+        color: #ece9e4;
+        font-size: 0.6rem;
+        word-break: keep-all;
+    }
+    #modal-recipe p {
+        font-size: 0.8rem;
+        margin-bottom: 0.4rem;
+    }
+    .modal-img-container {
+        width: 100%;
+        height: 20vh;
+    }
+    #modal-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        margin-bottom: 1rem; /*이미지 아래 공백추가*/
+        border: solid 1px rgba(255, 255, 255, 0.7);
+    }    
+    #modal-title {
+        padding: 0.5rem 0;
+        font-size: 1rem;
+        word-break: keep-all;
+    }
+
+    #modal-tags {
+        margin-top: 0.5rem;
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 0.5rem;
+        justify-content: center; 
+    }
+    .modal-tag {
+        background-color: #dfd2c0;
+        color: #575653;
+        font-size: 1rem;
+        padding: 0.3rem 0.8rem;
+        border-radius: 1.5rem;
+        border: 1px solid #bcbcb4;
+        white-space: nowrap; /* 태그 내용이 한 줄로 유지되도록 */
+    }
+
+    #modal-contact {
+        position: absolute;
+        right: 60%;
+        left: 1rem;
+        bottom: 1rem;
+        font-size: 0.8rem;
+        padding: 0.3rem;
+        box-shadow: 0px 5px 0px 0px #3a3936;
+    }
+    
+    #modal-contact a:visited {
+        color: black;
+    }
+
+    #modal-tags {
+        margin-top: 0.5rem;
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 0.3rem;
+        justify-content: center; 
+    }
+    .modal-tag {
+        background-color: #dfd2c0;
+        color: #575653;
+        font-size: 0.6rem;
+        padding: 0.2rem 0.4rem;
+        border-radius: 1.5rem;
+        border: 1px solid #bcbcb4;
+        white-space: nowrap; /* 태그 내용이 한 줄로 유지되도록 */
+    }
+
+    .modal-close {
+        top: 8px; 
+        right: 3px; 
+    }
+    .modal-close img {
+        width: 1rem;
+        height: auto;
+    }
+    #modal-prev {
+        left: 0;
+    }
+    #modal-prev img {
+        transform: rotate(180deg);
+        width: 0.8rem;
+        height: auto;
+    }
+    #modal-next {
+        right: 0;
+    }
+    #modal-next img {
+        width: 0.8rem;
+        height: auto;
+    }
+    
+}

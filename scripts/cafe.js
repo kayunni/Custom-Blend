@@ -267,7 +267,7 @@ function getBackgroundColor(cafeName, opacity = 1) {
     const baseColors = {
         starbucks: [38, 64, 37], // 스타벅스 RGB
         gongcha: [114, 56, 61], // 공차 RGB
-        compose: [239, 224, 149], // 컴포즈 RGB
+        compose: [220, 210, 140], // 컴포즈 RGB
         mega: [250, 207, 67], // 메가 RGB
     };
 
