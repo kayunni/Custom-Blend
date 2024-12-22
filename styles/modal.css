@@ -5,7 +5,9 @@
     font-weight: normal;
     font-style: normal;
 }
-
+* {
+    box-sizing: border-box;
+}
 .modal {
     display: none; 
     position: fixed;
@@ -49,7 +51,7 @@ ul {
 }
 
 #modal-description {
-    padding: 1rem;
+    padding: 1.5rem;
     background-color: #716a61;
     word-break: keep-all;
 }
@@ -74,7 +76,7 @@ ul {
 #modal-title {
     padding: 1rem 0;
     font-family: 'Ownglyph_ryurue-Rg';
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 #modal-tags {
@@ -163,7 +165,6 @@ ul {
     transition: transform 0.3s ease;
 }
 .modal-img-container {
-    background-color: yellow;
     width: 100%;
     height: 50vh;
 }
@@ -173,32 +174,22 @@ ul {
     object-fit: cover;
     display: block;
     margin-bottom: 1rem; /*이미지 아래 공백추가*/
+    border: solid 1px rgba(255, 255, 255, 0.7);
 }
 
-#modal-recommend {
-    text-align: left;
-    line-height: 200%;
-    font-size: 1.5rem;
-    padding-top: 2rem;
-}
-#modal-recommend p:first-child {
+#modal-contact {
+    position: absolute;
+    right: 4rem;
+    bottom: 3rem;
+    text-decoration: none;
+    background-color: white;
     font-size: 2rem;
-    font-weight: bold;
-    color: #bcbcb4;
-    border-bottom: 1px solid rgb(180, 178, 176);
 }
-#modal-recommend p:last-child {
-    font-size: 1.2rem;
-    color: #ece9e4;
-    margin-top: 1rem;
+
+#modal-contact a {
+    text-decoration: none;
+    color: black;
 }
-#modal-recommend ul {
-    list-style-type: decimal;
-    margin-left: 1.5rem;
-    margin-top: 1rem;
-    padding-left: 0;
-}
-#modal-recommend li {
-    font-size: 1.2rem;
-    color: #ece9e4;
+#modal-contact a:visited {
+    color: black;
 }

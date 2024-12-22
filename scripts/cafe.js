@@ -1,22 +1,23 @@
-// URL에서 선택된 카페 이름 가져오기
 const urlParams = new URLSearchParams(window.location.search);
 const selectedCafe = urlParams.get("cafe"); // 예: "starbucks"
-// 햄버거 메뉴 열기/닫기
 const hamburgerBtn = document.querySelector("#header #hamburger"); // 햄버거 버튼
 const sideMenu = document.querySelector("#side-menu");
 const menuClose = document.querySelector("#menu-close");
+const overlay = document.querySelector("#overlay");
 
 hamburgerBtn.addEventListener("click", () => {
     sideMenu.classList.remove("hidden");
     sideMenu.classList.add("visible");
+    overlay.classList.add("visible"); 
 });
 
 menuClose.addEventListener("click", () => {
     sideMenu.classList.remove("visible");
     sideMenu.classList.add("hidden");
+    overlay.classList.remove("visible"); 
 });
 
-// JSON 데이터 로드 및 렌더링
+// JSON 파일 로드하기
 fetch("data/drinks.json")
     .then((response) => {
         if (!response.ok) {
@@ -32,7 +33,7 @@ fetch("data/drinks.json")
             renderGallery(cafeData); // 갤러리 렌더링
             setupFilterButtons(cafeData); // 필터 버튼 이벤트 연결
         } else {
-            renderError(); // 카페 데이터가 없는 경우
+            renderError(); 
         }
     })
     .catch((error) => {
@@ -61,26 +62,25 @@ function renderHeader(cafeData) {
 
 // 선택된 필터 상태
 const selectedFilters = {
-    base: [], // 선택된 음료 베이스 필터
-    feature: [], // 선택된 음료 특징 필터
+    base: [], 
+    feature: [], 
 };
 
 function setupFilterButtons(cafeData) {
     const filterButtons = document.querySelectorAll(".filter-btn");
 
     filterButtons.forEach((button) => {
-        button.dataset.active = "false"; // 초기 상태 설정
+        button.dataset.active = "false"; 
 
-        // 버튼 hover 이벤트 추가
         button.addEventListener("mouseenter", () => {
             if (button.dataset.active !== "true") {
-                button.style.backgroundColor = getBackgroundColor(selectedCafe); // 호버 색상
+                button.style.backgroundColor = getBackgroundColor(selectedCafe); 
             }
         });
 
         button.addEventListener("mouseleave", () => {
             if (button.dataset.active !== "true") {
-                button.style.backgroundColor = ""; // 원래 상태로 복원
+                button.style.backgroundColor = ""; 
             }
         });
 

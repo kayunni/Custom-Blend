@@ -134,74 +134,48 @@
       "logo": "https://i.namu.wiki/i/20w6rY7yIRMiSETw1o-fe3jKLCobKL4XNTAGRivxZ0OJV3B06Roj5A1ks6YV4-gQ90Q9WYvxzRc2G_Uh6lQeTg.svg",
       "drinks": [
         {
-            "name": "컴포즈!!",
-            "base": "coffee",
-            "features": "sweet",
-            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "name": "딸샷추",
+            "base": "others",
+            "features": ["sweet", "seasonal", "unique"],
+            "image": "assets/images/drinks/compose/딸샷추.png",
             "recipe": {
-                "base_drink": "제주 말차 크림 프라푸치노",
-                "milk": "두유로 변경",
-                "javachip": "자바칩&토핑(반반) 2",
-                "drizzle": "초콜릿 드리즐 많이",
-                "powder": "유기농 말차 5스쿱"
+                "base_drink": "딸기라떼",
+                "espresso": "1샷 추가"
             },
-            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다."
+            "description": "지난 상반기 틱톡, 인스타 등 SNS에서 핫했던 딸기라떼에 샷추가를 한 '딸샷추'입니다. 딸기시즌을 맞이한 지금, 부드럽고 달콤한 딸기라떼에 샷을 하나 추가해서 커피의 향긋함과 쌉싸름함도 동시에 즐길 수 있습니다."
         },
         {
-            "name": "컴포즈!!",
+            "name": "커피 쿠키밀크쉐이크",
             "base": "coffee",
-            "features": "sweet",
-            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "features": ["high-caffeine", "sweet"],
+            "image": "assets/images/drinks/compose/샷추가쿠키밀크.png",
             "recipe": {
-                "base_drink": "제주 말차 크림 프라푸치노",
-                "milk": "두유로 변경",
-                "javachip": "자바칩&토핑(반반) 2",
-                "drizzle": "초콜릿 드리즐 많이",
-                "powder": "유기농 말차 5스쿱"
+                "base_drink": "쿠키밀크쉐이크",
+                "espresso": "1샷 추가"
             },
-            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다."
+            "description": "로투스 쿠키 분태가 듬뿍 들어간 쿠키밀크쉐이크에 샷을 추가한 메뉴입니다. 미용실 쿠키와 함께하는 쌉싸름한 커피는 언제나 옳다는 것은 아는 '먹잘알'이라면 꼭 한번 이 메뉴를 즐겨볼 것을 추천합니다."
         },
         {
-            "name": "컴포즈!!",
+            "name": "헤이즐넛 커피밀크쉐이크",
             "base": "coffee",
-            "features": "sweet",
-            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "features": ["sweet"],
+            "image": "assets/images/drinks/compose/헤이즐넛커피밀크.png",
             "recipe": {
-                "base_drink": "제주 말차 크림 프라푸치노",
-                "milk": "두유로 변경",
-                "javachip": "자바칩&토핑(반반) 2",
-                "drizzle": "초콜릿 드리즐 많이",
-                "powder": "유기농 말차 5스쿱"
+                "base_drink": "커피밀크쉐이크",
+                "syrup": "설탕시럽 빼고 헤이즐넛 시럽 추가"
             },
-            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다."
+            "description": "그냥 먹어도 맛있는 커피밀크쉐이크에 설탕시럽 대신 헤이즐넛을 추가한 메뉴입니다. 고소하고 진한 상하목장 우유를 베이스로 쌉싸름한 에스프레소에 헤이즐넛 시럽을 추가하였기 때문에 평소 헤이즐넛 라떼 매니아라면 색다른 형태의 헤이즐넛 라때를 즐겨볼 수 있습니다."
         },
         {
-            "name": "컴포즈!!",
-            "base": "coffee",
-            "features": "sweet",
-            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "name": "펄 요거트 스무디",
+            "base": "others",
+            "features": ["sweet", "unique"],
+            "image": "assets/images/drinks/compose/요거트펄.png",
             "recipe": {
-                "base_drink": "제주 말차 크림 프라푸치노",
-                "milk": "두유로 변경",
-                "javachip": "자바칩&토핑(반반) 2",
-                "drizzle": "초콜릿 드리즐 많이",
-                "powder": "유기농 말차 5스쿱"
+                "base_drink": "블루베리 요거트스무디(or 플레인 요거트스무디)",
+                "topping": "타피오카 펄 추가"
             },
-            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다."
-        },
-        {
-            "name": "컴포즈!!",
-            "base": "coffee",
-            "features": "sweet",
-            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
-            "recipe": {
-                "base_drink": "제주 말차 크림 프라푸치노",
-                "milk": "두유로 변경",
-                "javachip": "자바칩&토핑(반반) 2",
-                "drizzle": "초콜릿 드리즐 많이",
-                "powder": "유기농 말차 5스쿱"
-            },
-            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다."
+            "description": "부드럽고 상큼한 요거트 스무디에 쫀득하고 탱글한 펄을 더해 완벽한 조화를 이룬 음료입니다. 매끄럽게 목을 타고 내려가는 요거트 스무디의 촉감과 입안에서 쫀득하게 씹히는 펄의 식감이 어우러져, 한 잔만으로도 기분 좋은 여유를 만끽할 수 있습니다."
         }
       ]
     },
@@ -212,70 +186,85 @@
         {
             "name": "꿀 타피오카 아메리카노",
             "base": "coffee",
-            "features": "sweet",
-            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "features": ["diet", "no-milk", "unique"],
+            "image": "assets/images/drinks/mega/펄아메리카노.png",
             "recipe": {
                 "base_drink": "꿀 아메리카노",
                 "shots": "기본 2샷에서 연하게",
                 "topping": "타피오카 펄 추가"
             },
-            "description": "아메리카노의 묵직한 바디감에 달콤한 사양벌꿀이 부드럽게 어우러진 커피에, 쫄깃한 타피오카 펼까지! 이 삼박자의 조화를 느껴보세요."
+            "description": "꿀아메리카노는 아메리카노의 묵직한 바디감, 그리고 달콤한 사양벌꿀이 부드럽게 어우러진 커피입니다. 여기에 쫄깃달달 타피오카 펼까지 추가한다면? 이 삼박자의 조화를 느껴보세요."
         },
         {
-            "name": "메가!!",
-            "base": "coffee",
-            "features": "sweet",
-            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "name": "아몬드 딸기라떼",
+            "base": "milk",
+            "features": ["no-milk", "sweet", "seasonal"],
+            "image": "assets/images/drinks/mega/딸기아몬드.png",
             "recipe": {
-                "base_drink": "제주 말차 크림 프라푸치노",
-                "milk": "두유로 변경",
-                "javachip": "자바칩&토핑(반반) 2",
-                "drizzle": "초콜릿 드리즐 많이",
-                "powder": "유기농 말차 5스쿱"
+                "base_drink": "딸기라떼",
+                "milk": "아몬드 브리즈로 변경"
             },
-            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다."
+            "description": "그냥 먹어도 맛있는 딸기라떼, 아몬드브리즈로 변경해서 즐기면 더욱더 고소달달하게 즐길 수 있습니다! 딸기 시즌을 맞이한 기념으로 상큼한 딸기와 고소한 아몬드 브리즈의 조화를 느껴보세요!"
         },
         {
-            "name": "메가!!",
+            "name": "커피 초코 펄프라페",
             "base": "coffee",
-            "features": "sweet",
-            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "features": ["no-milk", "sweet", "seasonal"],
+            "image": "assets/images/drinks/mega/커피초코펄.png",
             "recipe": {
-                "base_drink": "제주 말차 크림 프라푸치노",
-                "milk": "두유로 변경",
-                "javachip": "자바칩&토핑(반반) 2",
-                "drizzle": "초콜릿 드리즐 많이",
-                "powder": "유기농 말차 5스쿱"
+                "base_drink": "커피프라페",
+                "gelato": "초코젤라또 추가",
+                "topping": "타피오카 펄 추가"
             },
-            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다."
+            "description": "커피의 쌉싸름함과 초코젤라또의 달콤함, 그리고 펄의 쫄깃한 식감! 지루하고 피곤한 일상 중에 다채로운 맛과 식감 모두 챙길 수 있는 커피프라페를 즐겨보세요."
         },
         {
-            "name": "메가!!",
-            "base": "coffee",
-            "features": "sweet",
-            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "name": "소르베 유자애플 펀치",
+            "base": "fruit",
+            "features": ["no-milk", "sweet"],
+            "image": "assets/images/drinks/mega/소르베사과유자.png",
             "recipe": {
-                "base_drink": "제주 말차 크림 프라푸치노",
-                "milk": "두유로 변경",
-                "javachip": "자바칩&토핑(반반) 2",
-                "drizzle": "초콜릿 드리즐 많이",
-                "powder": "유기농 말차 5스쿱"
+                "base_drink": "사과유자차(ice)",
+                "sorbet": "레몬 소르베 추가"
             },
-            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다."
+            "description": "알 만한 사람들은 다 아는 메가커피의 숨은 다크호스 음료, 사과유자차에 레몬소르베를 추가한 매뉴입니다. 상큼하고 시원한 레몬소르베 한 입과 달달한 사과유자차 한 입이 선사하는 새콤달콤함을 음미해보세요."
         },
         {
-            "name": "메가!!",
+            "name": "다이어트 아몬드 카페라떼",
             "base": "coffee",
-            "features": "sweet",
-            "image": "assets/images/drinks/starbucks/초코나무숲.jpg",
+            "features": ["no-milk", "diet"],
+            "image": "assets/images/drinks/mega/다이어트카페라떼.jpg",
             "recipe": {
-                "base_drink": "제주 말차 크림 프라푸치노",
-                "milk": "두유로 변경",
-                "javachip": "자바칩&토핑(반반) 2",
-                "drizzle": "초콜릿 드리즐 많이",
-                "powder": "유기농 말차 5스쿱"
+                "base_drink": "카페라떼",
+                "milk": "아몬드 브리즈로 변경",
+                "powder": "스테비아 추가"
             },
-            "description": "쌉싸름하고 달콤한 맛을 동시에 즐길 수 있습니다."
+            "description": "아몬드브리즈로 기존의 카페라떼보다 한층 더 고소한 풍미를 끌어올리면서도, 설탕 시럽 대신 스테비아를 추가해 혈덩 걱정 없이 편안하게 달달함을 즐길 수도 있습니다. 아, 유당불내증을 가진 분들도 편하게 즐길 수 있는 건 덤입니다."
+        },
+        {
+            "name": "오트 티라미수라떼",
+            "base": "coffee",
+            "features": ["no-milk", "sweet", "diet"],
+            "image": "assets/images/drinks/mega/오트티라미수.png",
+            "recipe": {
+                "base_drink": "티라미수라떼",
+                "milk": "오트 밀크로 변경",
+                "powder": "스테비아 추가"
+            },
+            "description": "우유 대신 오트밀크를 사용하여 더욱 진한 티라미수라떼를 유당불내증 걱정없이 맛 볼 수 있습니다. 또한 설탕시럽 대신 스테비아를 추가해 혈당 걱정 없이 즐길 수 있습니다."
+        },
+        {
+            "name": "라이트 바닐라라떼",
+            "base": "coffee",
+            "features": ["diet", "high-caffeine"],
+            "image": "assets/images/drinks/mega/라이트바닐라.png",
+            "recipe": {
+                "base_drink": "바닐라라떼",
+                "espresso": "1샷 추가",
+                "milk": "아몬드 브리즈로 변경",
+                "syrup": "라이트 바닐라 시럽으로 변경"
+            },
+            "description": "아몬드브리즈로 기존의 카페라떼보다 한층 더 고소한 풍미를 끌어올리면서도, 설탕 시럽 대신 스테비아를 추가해 혈덩 걱정 없이 편안하게 달달함을 즐길 수도 있습니다. 아, 유당불내증을 가진 분들도 편하게 즐길 수 있는 건 덤입니다."
         }
       ]
     }
