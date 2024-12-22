@@ -83,11 +83,11 @@ ul {
     margin-top: 0.5rem;
     display: flex;
     flex-wrap: wrap; 
-    gap: 0.5rem;
+    gap: 0.8rem;
     justify-content: center; 
 }
 .modal-tag {
-    background-color: #bbb1a3;
+    background-color: #dfd2c0;
     color: #575653;
     font-size: 1rem;
     padding: 0.3rem 0.8rem;
@@ -104,6 +104,7 @@ ul {
     border: 1px solid #bcbcb4;
     padding: 0.3rem 0.5rem;
     border-radius: 2rem;
+    font-family: 'Ownglyph_ryurue-Rg';
 }
 
 /* 레시피 값 스타일 */
@@ -182,9 +183,13 @@ ul {
     right: 4rem;
     bottom: 3rem;
     text-decoration: none;
-    background-color: white;
+    background-color: #e5e2dc;
     font-size: 1.5rem;
     padding: 1rem;
+    box-shadow: 0px 5px 0px 0px #3a3936;
+    margin-bottom: 5px;
+    border-radius: 2rem;
+    font-family: 'Ownglyph_ryurue-Rg';
 }
 
 #modal-contact a {
@@ -194,3 +199,8 @@ ul {
 #modal-contact a:visited {
     color: black;
 }
+#modal-contact:hover {
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 0px 0px #007144;
+    transition: all 0.3s ease;
+  }

@@ -308,24 +308,6 @@ html::-webkit-scrollbar {
     font-size: 1.5rem;
     font-family: 'Ownglyph_ryurue-Rg';
 }
-/* .gallery::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    right: 0;
-    border: 0.8px solid #c2bbb1;
-    transform: translateX(25px);
-}
-
-.gallery::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    bottom: 0;
-    border: 0.8px solid #c2bbb1;
-    transform: translateX(-25px);
-} */
 
 .gallery-item {
     height: 45vh;
